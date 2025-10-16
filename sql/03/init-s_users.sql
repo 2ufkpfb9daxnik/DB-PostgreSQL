@@ -12,4 +12,7 @@ VALUES
   (2, 'Bob', 25);
 
 -- すべてのレコードを抽出する
-SELECT * FROM s_users;
+SELECT
+  *
+FROM
+  s_users;
