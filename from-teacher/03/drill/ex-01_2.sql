@@ -1,7 +1,7 @@
 SELECT
-  id,
-  last_login_at,
-  created_on,
-  id
+    id,
+    last_login_at,
+    created_on,
+    id
 FROM
-  s_characters;
+    s_characters;
