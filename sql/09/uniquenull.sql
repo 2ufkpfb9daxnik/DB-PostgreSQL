@@ -12,7 +12,8 @@ INSERT INTO
     p_characters (character_id, name, email)
 VALUES
     (1, 'Alice', NULL),
-    (2, 'Bob', NULL);
+    (2, 'Bob', 'hello@nothankyou.com'),
+    (3, 'Charlie', 'hello@nothankyou.com');
 
 SELECT
     *
