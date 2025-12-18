@@ -1,0 +1,11 @@
+START TRANSACTION;
+
+CREATE TABLE p_characters (
+    character_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(16) NOT NULL,
+    level INTEGER NOT NULL,
+    job_id INTEGER REFERENCES p_jobs (job_id) ON DELETE SET NULL, -- ◀ 注目
+    user_id INTEGER REFERENCES p_users (user_id) ON DELETE SET NULL -- ◀ 注目
+);
+
+ROLLBACK;
