@@ -1,5 +1,7 @@
 SELECT
-    i.*
+    item_id,
+    name,
+    description
 FROM
     x_items AS i
 WHERE
