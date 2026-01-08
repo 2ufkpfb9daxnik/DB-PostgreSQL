@@ -1,7 +1,7 @@
 SELECT
-    c.characters_id,
+    c.character_id,
     c.name,
-    j.name
+    COALESCE(j.name, '---')
 FROM
-    n_jobs
-    RIGHT JOIN
+    n_jobs AS j
+    RIGHT JOIN n_characters AS c ON j.job_id = c.job_id
